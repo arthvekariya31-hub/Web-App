@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}AI-Generated Phishing Detector{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <span class="brand-mark">&#9873;</span>
+        <div>
+          <div class="brand-title">AI-Generated Phishing Emails Detector</div>
+          <div class="brand-sub">MSc Cyber Security Dissertation &mdash; Research Validation Tool</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      This tool is a research prototype built to validate dissertation findings. It is not a production
+      security product and should not be relied upon as a sole line of defence against phishing.
+    </div>
+  </footer>
+</body>
+</html>
